@@ -6,7 +6,7 @@ A simple, web-based Hospital Management System built using **Flask**, **SQLite**
 
 ## 🚀 Live Demo
 
-🌐 [View it on Render]([reports](https://hospital-management-54kd.onrender.com))  
+🌐 [View it on Render](https://hospital-management-54kd.onrender.com)  
 📦 [GitHub Repository](https://github.com/pradeepnagar28/hospital-management)
 
 ---
@@ -29,7 +29,4 @@ A simple, web-based Hospital Management System built using **Flask**, **SQLite**
 | HTML/CSS  | Flask   | SQLite   | Render     |
 | Jinja2    | Python  | SQLAlchemy | GitHub    |
 
----
-
-## 📁 Project Structure
 
