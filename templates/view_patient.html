@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Patient: {{ patient.name }}</h2>
+        <ul>
+            <li><strong>ID:</strong> {{ patient.id }}</li>
+            <li><strong>DOB:</strong> {{ patient.dob }}</li>
+            <li><strong>Age:</strong> {{ patient.age }}</li>
+            <li><strong>Gender:</strong> {{ patient.gender }}</li>
+            <li><strong>Contact:</strong> {{ patient.contact }}</li>
+            <li><strong>Address:</strong> {{ patient.address }}</li>
+            <li><strong>Emergency Contact:</strong> {{ patient.emergency_contact }}</li>
+            <li><strong>Blood Group:</strong> {{ patient.blood_group }}</li>
+            <li><strong>Diagnosis:</strong> {{ patient.diagnosis }}</li>
+            <li><strong>Admit Date:</strong> {{ patient.admit_date }}</li>
+            <li><strong>Discharge Date:</strong> {{ patient.discharge_date }}</li>
+            {% if patient.report_file %}
+                <li><strong>Report:</strong> <a href="{{ url_for('report', filename=patient.report_file) }}">View PDF</a></li>
+            {% endif %}
+        </ul>
+        <a href="/">&larr; Back to Home</a>
+    </div>
+</body>
+</html>
